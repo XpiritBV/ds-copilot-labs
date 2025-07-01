@@ -34,6 +34,17 @@
 
 ---
 
-## Next Step
+## Next Steps
 
-➡️ [Start with Prerequisites](Prerequisites.md)
+- [Prerequisites](./Prerequisites.md)
+- [Lab 1: Project Setup and Intro to Copilot](./Lab%201%20Project%20Setup%20and%20Intro%20to%20Copilot.md)
+- [Lab 2: Refactor for Success](./Lab%202%20Refactor%20for%20Success.md)
+- [Lab 3: Light EDA](./Lab%203%20EDA.md)
+- [Lab 4: Working with Copilot Instructions](./Lab%204%20Working%20with%20Copilot%20Instructions.md)
+- [Lab 5: Build Survival Predictor App in Agent Mode](./Lab%205%20Survival%20Predictor%20App.md)
+- [Lab 6: Project Documentation](./Lab%206%20Document.md)
+
+
+
+
+

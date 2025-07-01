@@ -1,61 +1,53 @@
-1. Open VS code. Let's start from the scratch
-Navigate to Github copilot chat. Enter /help - take a look at the available build in helper commands - you will experiment with them very shortly! 
+# Lab 1: Project Setup and Introduction to Copilot
 
-## 1  Project Bootstrap and reading the data (Agent)
-2. Let's create our project. For the data exploration we are going to use dataset: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv 
+## Getting Started
 
-prompt: 
+1. **Open VS Code** and let's start from scratch.
+2. **Navigate to GitHub Copilot Chat** and enter `/help` to explore the available built-in helper commands. You'll experiment with them shortly!
 
+## Project Bootstrap and Data Reading
+
+Let's create our project for data exploration using the Titanic dataset:  
+[Titanic Dataset CSV](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv)
+
+### 🎯 Prompt (Agent Mode)
+
+```
 /new Create a new Python data science project to analyze Titanic survival data.  
 - Scaffold the project structure following Python data science best practices.
 - Add a Jupyter notebook to the project.
 - In the notebook, include code to read the Titanic dataset from:  
-  `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv`
+  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
+```
 
-note: use the enviroment created in Prerequisites. 
+> **Note:** Use the environment created in Prerequisites.
 
-Questions:
-Did it generate the structure you expected? You can iterate changing the prompt or with follow up commands in the chat. 
-
-Use "Ask" mode to find out best practices for Project Bootstrap for data science using Python. 
-prompt: 
-
-**"What are the recommended best practices for setting up (bootstrapping) a new data science project using Python and Jupyter notebooks?"**
+![Selecting the Python or Jupyter kernel in VS Code](images/choose-myenv.png)
 
 
-## 2 Refactor (Edit mode)
+### Reflection Questions
 
-Download dataset https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.cs to the project folder. 
+- Did it generate the structure you expected? 
+- You can iterate by changing the prompt or with follow-up commands in the chat.
 
-Prompt: 
-Refactor the data loading logic in the notebook so that it is encapsulated in a function. This function should:
+### Follow-up: Best Practices Research
 
-- Attempt to load the Titanic dataset from a local file in the data directory by default.
-- If the local file does not exist, load the data from the provided URL.
-- Move this function to a new Python file
-Be sure to follow best practices for code organization and reproducibility.
+Use "Ask" mode to find out best practices for project bootstrap in data science using Python.
 
+### 🎯 Prompt (Ask Mode)
 
-Test the code. 
-Did it work? If not, try to fix the error using GitHub Copilot (Right click -> Copilot-> Fix or using "Sparkles" icon nexr to the error). 
+```
+What are the recommended best practices for setting up (bootstrapping) a new data science project using Python and Jupyter notebooks?
+```
 
-Let's go further and extract the configurations: 
-Add both files as a context (the functuon adn function call): 
+### Advanced Tip: Model Selection
 
-Prompt: 
-Refactor the `load_titanic_data` function so that the default values for `local_path` and `url` are imported from a separate configuration module
+If you've worked with Copilot before, now you have time to experiment with different models:  
+[Choosing the Right AI Model for Your Task](https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task)
 
-## Tests (Agent mode)
+You can go a step further: describe your task and ask GitHub Copilot to suggest models by providing a link to the documentation with: #fetch https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task
 
-Open the file with load_titanic_data function
+---
 
-prompt: 
-/tests load_titanic_data function and confirm that all tests pass successfully
+➡️ **[Next: Lab 2 Refactor for Success →](Lab%202%20Refactor%20for%20Success.md)**
 
-### Expalin using inline chat: 
-
-Browse through the generated code. Do you want and explanation of the created code? Select the code block, use inline chat(Ctrl + i) use /explain command or context menu (righ click -> Copilot) 
-
-
-Tip: maybe you worked with Copilot before? Now you hvae time to experiment with different models: https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task 
-You can go a step further: describe your task and ask github copilt to suggest you models providing a link to the documentation with #fetch https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task 

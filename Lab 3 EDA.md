@@ -1,110 +1,136 @@
-### EDA
+# Lab 3: Titanic Dataset Lab: Exploratory Data Analysis (EDA)
 
-## 2 Ask questions about notebook content (Ask mode)
-Back to our dataset!
+This lab will guide you step-by-step through exploring, cleaning, visualizing, and modeling the Titanic dataset. Follow the prompts and tasks closely.
 
-Fox example you can start asking question about the data. 
+---
 
-Prompt: “What do the columns sibsp and parch mean in Titanic data?”
 
-Task: 
-Calculate and print survival rate
+## Step 1: Ask Questions About the Data (Ask Mode)
 
-## 2 Clean missing values and fix dtypes
+Let’s return to our dataset and begin by developing an understanding of its contents.
 
-While Pandas can read this value into a DataFrame, the result for a column like age is that its data type will be set to object instead of a numeric data type, which is problematic for graphing.
+### 🎯 Prompt (Ask Mode)
 
-This problem can be corrected by replacing the question mark with a missing value that pandas is able to understand. 
+```
+What do the columns sibsp and parch mean in the Titanic data?
+```
 
-1. Task: Replaces `'?'` with `NaN` and ensure numeric columns are truly numeric
+**Task:**
+- Calculate and print the overall survival rate of passengers.
 
-In future steps we would like to calculate correlations. To do so, all the variables used need to be numeric for the correlation calculation and fopr example currently gender is stored as a string
+---
 
-2. Task: Convert columns to numeric where possible (Prompt: Replace 'male' with 1 and 'female' with 0 in the sex column.)
+## 2. Clean Missing Values and Fix Data Types
 
-3. View the dataset to confirm the chnages:
+Often, data contains missing values or incorrectly assigned data types. For example, if the `age` column has entries like `'?'`, pandas may set its type to `object` instead of a numeric type, which can interfere with calculations and visualizations.
 
-Tip: you can use the data viewing experience offered by other extensions like Data Wrangler. The Data Wrangler extension offers a rich user interface to show insights about your data and helps you perform data profiling, quality checks, transformations, and more. 
+**Step 1:**  
+- Replace all `'?'` entries with `NaN` and ensure that numeric columns are properly typed.
 
-## Explore with quick visuals
-Now that the data is in good shape, you can use seaborn and matplotlib to view how certain columns of the dataset relate to survivability. 
+**Step 2:**  
+- Convert columns to numeric where possible. For instance, to prepare for correlation analysis, convert categorical variables to numbers (e.g., replace 'male' with 1 and 'female' with 0 in the `sex` column).
 
-Here are some ideas for vizualizing:
 
-Survival Rate by Gender (Bar Plot)
-Age Distribution of Survivors and Non-survivors (Histogram)
-Survival Rate by Passenger Class (Grouped Bar Plot)
-Fare Distribution by Survival Status (Boxplot)
-Correlation Heatmap
+### 🎯 Prompt (Edit Mode)
 
-Example (Edit mode): 
-Prompt: Vizualize Age Distribution of Survivors and Non-survivors (Histogram) using seaborn and matplotlib
+```
+Replace 'male' with 1 and 'female' with 0 in the sex column.
+```
 
-Go to Ask Mode:
+**Step 3:**  
+- View the dataset to confirm these changes.
 
-USe the diagram as an output to chat (three dots on the left top of diagram):
+*Tip: Consider using data profiling tools such as Data Wrangler for interactive insights and transformations.*
+
+---
+
+## 3. Explore With Quick Visuals
+
+With a clean dataset, use visualization libraries like seaborn and matplotlib to explore how various features relate to survival. Here are some ideas:
+
+- **Survival Rate by Gender** (Bar Plot)
+- **Age Distribution of Survivors vs. Non-survivors** (Histogram)
+- **Survival Rate by Passenger Class** (Grouped Bar Plot)
+- **Fare Distribution by Survival Status** (Boxplot)
+- **Correlation Heatmap**
+
+
+### 🎯 Prompt (Edit Mode)
+
+```
+Visualize the Age Distribution of Survivors and Non-survivors (Histogram) using seaborn and matplotlib.
+```
+
+Switch to Ask Mode:
+
+Use the diagram as output to the chat (find the three dots in the top left of the diagram window):
 
 ![Output to chat example](images/Output%20to%20chat.png)
 
-Prompt: 
-Explain in plain English what this chart shows; highlight two surprising patterns. 
+### 🎯 Prompt (Ask Mode)
 
-Task:
-Ask to change the style of the plot according to your taste :) 
+```
+Explain in plain English what this chart shows and highlight two surprising patterns.
+```
 
+**Task:**
+- Change the style of the plot to your preference and observe how presentation impacts interpretation.
 
-### Analyze the correlation between all the input variables
+---
 
-#### Encode Categorical Features.
+## 4. Analyze Correlations Between Input Variables
 
-These graphs are helpful in seeing some of the relationships between survival and the input variables of the data, but it's also possible to use pandas to calculate correlations. To do so, all the variables used need to be numeric for the correlation calculation and currently gender is stored as a string. We need to convert those string values to integers. 
+To build a model, it's important to understand relationships between features and survival. Many algorithms require numeric input, so ensure all relevant features are numeric.
 
-Many algorithms expect numerical input. Convert sex from strings to a binary indicator (1 = male, 0 = female).
-
-Prompt: Replace 'male' with 1 and 'female' with 0 in the sex column.
-
-Now, you can analyze the correlation between all the input variables to identify the features that would be the best inputs to a machine learning model. The closer a value is to 1, the higher the correlation between the value and the result. Use the following code to correlate the relationship between all variables and survival.
-
-Prompt:
-Show correlation of all numeric columns with survived, sorted descending.
-
-### Finalize the Modeling DataFrame
-Keep the fields that add signal, drop the rest, and remove any remaining rows with missing values.
-
-With this information in hand, you can now drop from the dataset the low value sibsp and parch columns, as well as any rows that had NaN values, to end up with a dataset that can be used for training a model.
-
-You can use Ask mode for the the guildlines. 
-
-most likely you will end up with ['Survived', 'Pclass', 'Sex', 'Age', 'Fare'] 
-
-### Train and evaluate a model using scikit-learn
-
-With your finall dataframe train and evaluate the model. 
-Tip: you combination of modes, start with Ask mode asking for the plan of implemnentation and explanation. Iterate on the plan,  
-
-### Save the trained model for use in the next lab ("../titanic_model.pkl")
+- **Task:** Encode categorical features as numeric (e.g., convert `sex` to 1 = male, 0 = female).
 
 
+### 🎯 Prompt (Edit Mode)
+
+```
+Replace 'male' with 1 and 'female' with 0 in the sex column.
+```
+
+Now, calculate the correlations between all input variables and survival to identify which features might be useful for modeling. The closer the correlation is to 1 (or -1), the stronger the relationship.
 
 
+### 🎯 Prompt (Ask Mode)
 
+```
+Show correlation of all numeric columns with Survived, sorted descending.
+```
 
+---
 
+## 5. Finalize the Modeling DataFrame
 
+With your correlation analysis done, retain only those fields that add significant signal to your model. Drop any columns with low value (such as `sibsp` and `parch`) and remove any remaining rows with missing values.
 
+- Most likely, you will keep: `['Survived', 'Pclass', 'Sex', 'Age', 'Fare']`
 
+*You can use Ask Mode for guidelines at this stage.*
 
+---
 
+## 6. Train and Evaluate a Model Using scikit-learn
 
+Using your finalized DataFrame, train and evaluate a machine learning model (e.g., logistic regression) using scikit-learn.
 
+**Tips:**  
+- Use Ask Mode to draft a plan for implementation and explanation.
+- Iterate on the plan as you go: refine, implement, evaluate, and explain.
 
+---
 
+## 7. Save the Trained Model
 
+Once satisfied with your model, save it for use in the next lab:  
+- File path: `../titanic_model.pkl`
 
+---
 
+Continue to the next steps or lab as instructed!
 
+---
 
-
-
-
-
+➡️ **[Next: Lab 4 Working with Copilot Instructions →](Lab%204%20Working%20with%20Copilot%20Instructions.md)**

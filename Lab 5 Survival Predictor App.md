@@ -1,4 +1,4 @@
-# Lab: Titanic Survival Predictor App (Agent Mode)
+# Lab 5: Titanic Survival Predictor App (Agent Mode)
 
 This lab will be heavily relying on the **Agent mode**: 
 
@@ -21,4 +21,8 @@ Create a Streamlit app (streamlit_app.py) that follow the requirements:
 4. **Explanations**
    - Explanations must be detailed and reference the most important features for Titanic survival, based on correlation analysis (e.g., “Very likely to survive because she is a woman (women had the highest survival rate) and was in first class (first class passengers survived more often)”).
    - Explanations should be generated dynamically for each character, using their features and known Titanic survival patterns.
+
+---
+
+➡️ **[Next: Lab 6 Document →](Lab%206%20Document.md)**
 

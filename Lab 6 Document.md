@@ -1,13 +1,15 @@
-## Documentation
+# Lab 6: Document the Project
 
-You can use GitHub Copilot to create comprehensive documentation for your Titanic survival predictor project, making it professional and maintainable.
+This lab will guide you through using GitHub Copilot to create comprehensive documentation for your Titanic Survival Predictor project, making it professional and maintainable.
 
-## Tasks
+---
 
-### 1. Update README.md (Edit Mode)
-Select your current [README.md](README.md) content and and transform it into a comprehensive project documentation.
+## Step 1: Update the README.md
 
-**Ideas for the prompt:**
+Select your current [README.md](README.md) content and transform it into comprehensive project documentation.
+
+### 🎯 Prompt (Edit Mode)
+
 ```
 Transform this README into comprehensive project documentation that includes:
 - Project overview and objectives
@@ -15,6 +17,8 @@ Transform this README into comprehensive project documentation that includes:
 - Project structure explanation
 ```
 
+---
+
 ## 🎉 Congratulations!
 
-**Well done getting it to the end!** 
+**Well done getting to the end!**

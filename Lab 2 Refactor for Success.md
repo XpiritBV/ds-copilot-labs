@@ -1,37 +1,72 @@
+# Lab 2: Refactor for Success
 
-## 2 Refactor (Edit mode)
+## Refactoring Data Loading Logic
 
-Download dataset https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.cs to the project folder. 
+### Step 1: Download the Dataset
 
-Prompt: 
+Download the Titanic dataset to your project folder:
+[Titanic Dataset CSV](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv)
+
+---
+
+### Step 2: Refactor Data Loading (Edit Mode)
+
+
+### 🎯 Prompt (Edit Mode)
+
+```
 Refactor the data loading logic in the notebook so that it is encapsulated in a function. This function should:
-
 - Attempt to load the Titanic dataset from a local file in the data directory by default.
 - If the local file does not exist, load the data from the provided URL.
-- Move this function to a new Python file
+- Move this function to a new Python file.
 Be sure to follow best practices for code organization and reproducibility.
+```
+
+---
+
+### Step 3: Test the Code
+
+Test the code after refactoring. Did it work? If not, try to fix the error using GitHub Copilot (Right-click → Copilot → Fix) or use the "Sparkles" icon next to the error.
+
+---
+
+### Step 4: Extract Configuration
+
+Let's go further and extract the configurations:
+
+Add both files as context (the function and the function call).
 
 
-Test the code. 
-Did it work? If not, try to fix the error using GitHub Copilot (Right click -> Copilot-> Fix or using "Sparkles" icon nexr to the error). 
+### 🎯 Prompt (Edit Mode)
 
-Let's go further and extract the configurations: 
-Add both files as a context (the functuon adn function call): 
+```
+Refactor the `load_titanic_data` function so that the default values for `local_path` and `url` are imported from a separate configuration module.
+```
 
-Prompt: 
-Refactor the `load_titanic_data` function so that the default values for `local_path` and `url` are imported from a separate configuration module
+---
 
-## Tests (Agent mode)
+## Testing (Agent Mode)
 
-Open the file with load_titanic_data function
+Open the file with the `load_titanic_data` function.
 
-prompt: 
+
+### 🎯 Prompt (Agent Mode)
+
+```
 /tests load_titanic_data function and confirm that all tests pass successfully
+```
 
-### Expalin using inline chat: 
+---
 
-Browse through the generated code. Do you want and explanation of the created code? Select the code block, use inline chat(Ctrl + i) use /explain command or context menu (righ click -> Copilot) 
+### Explain Using Inline Chat
+
+Browse through the generated code. Do you want an explanation of the created code? Select the code block, use inline chat (Ctrl + I), use the `/explain` command, or use the context menu (right-click → Copilot).
+
+![Using inline chat in VS Code](images/inline%20chat.png)
+*Use inline chat to quickly get explanations or suggestions for your code in VS
+
+---
+
+➡️ **[Next: Lab 3 EDA →](Lab%203%20EDA.md)**
 
 
-Tip: maybe you worked with Copilot before? Now you hvae time to experiment with different models: https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task 
-You can go a step further: describe your task and ask github copilt to suggest you models providing a link to the documentation with #fetch https://docs.github.com/en/copilot/reference/ai-models/choosing-the-right-ai-model-for-your-task 

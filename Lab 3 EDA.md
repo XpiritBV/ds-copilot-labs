@@ -15,8 +15,7 @@ Let’s return to our dataset and begin by developing an understanding of its co
 What do the columns sibsp and parch mean in the Titanic data?
 ```
 
-**Task:**
-- Calculate and print the overall survival rate of passengers.
+**Task:**  Calculate and print the overall survival rate of passengers.
 
 ---
 
@@ -73,8 +72,7 @@ Use the diagram as output to the chat (find the three dots in the top left of th
 Explain in plain English what this chart shows and highlight two surprising patterns.
 ```
 
-**Task:**
-- Change the style of the plot to your preference and observe how presentation impacts interpretation.
+**Task:** Change the style of the plot to your preference and observe how presentation impacts interpretation.
 
 ---
 
@@ -82,7 +80,7 @@ Explain in plain English what this chart shows and highlight two surprising patt
 
 To build a model, it's important to understand relationships between features and survival. Many algorithms require numeric input, so ensure all relevant features are numeric.
 
-- **Task:** Encode categorical features as numeric (e.g., convert `sex` to 1 = male, 0 = female).
+**Task:** Encode categorical features as numeric (e.g., convert `sex` to 1 = male, 0 = female).
 
 
 ### 🎯 Prompt (Edit Mode)

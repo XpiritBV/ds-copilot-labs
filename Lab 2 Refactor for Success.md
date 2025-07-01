@@ -22,6 +22,9 @@ Refactor the data loading logic in the notebook so that it is encapsulated in a 
 Be sure to follow best practices for code organization and reproducibility.
 ```
 
+> **Why this prompt works well:**  
+> This prompt is clear, specific, and actionable. It breaks down the task into concrete requirements (encapsulate logic in a function, handle both local and remote data sources, move to a new file, and follow best practices), which reduces ambiguity and makes it easy to implement and review. By specifying both the desired behavior and code organization, it encourages reproducibility—anyone following the prompt will produce a similar, maintainable solution.
+
 ---
 
 ### Step 3: Test the Code

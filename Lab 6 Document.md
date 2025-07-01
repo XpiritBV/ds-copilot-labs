@@ -4,11 +4,11 @@ This lab will guide you through using GitHub Copilot to create comprehensive doc
 
 ---
 
-## Step 1: Update the README.md
+## Update the README.md
 
 Select your current [README.md](README.md) content and transform it into comprehensive project documentation.
 
-### 🎯 Prompt (Edit Mode)
+### 🎯 Prompt idea
 
 ```
 Transform this README into comprehensive project documentation that includes:

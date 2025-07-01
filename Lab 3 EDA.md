@@ -5,7 +5,7 @@ This lab will guide you step-by-step through exploring, cleaning, visualizing, a
 ---
 
 
-## Step 1: Ask Questions About the Data (Ask Mode)
+## Step 1: Ask Questions About the Data
 
 Let’s return to our dataset and begin by developing an understanding of its contents.
 

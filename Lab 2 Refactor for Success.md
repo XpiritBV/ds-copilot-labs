@@ -45,7 +45,7 @@ Refactor the `load_titanic_data` function so that the default values for `local_
 
 ---
 
-## Testing (Agent Mode)
+## Testing
 
 Open the file with the `load_titanic_data` function.
 

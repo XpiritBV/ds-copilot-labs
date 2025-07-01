@@ -78,18 +78,7 @@ Explain in plain English what this chart shows and highlight two surprising patt
 
 ## 4. Analyze Correlations Between Input Variables
 
-To build a model, it's important to understand relationships between features and survival. Many algorithms require numeric input, so ensure all relevant features are numeric.
-
-**Task:** Encode categorical features as numeric (e.g., convert `sex` to 1 = male, 0 = female).
-
-
-### 🎯 Prompt (Edit Mode)
-
-```
-Replace 'male' with 1 and 'female' with 0 in the sex column.
-```
-
-Now, calculate the correlations between all input variables and survival to identify which features might be useful for modeling. The closer the correlation is to 1 (or -1), the stronger the relationship.
+Let's calculate the correlations between all input variables and survival to identify which features might be useful for modeling. The closer the correlation is to 1 (or -1), the stronger the relationship.
 
 
 ### 🎯 Prompt (Ask Mode)

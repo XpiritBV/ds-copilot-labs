@@ -1,10 +1,10 @@
-# Hands-on exercises: Titanic Survival Predictor with GitHub Copilot Chat
+# Titanic Survival Predictor: A Hands-on Data Science Lab Series with GitHub Copilot
 
-> **Goal**  
-> Start from an empty repository and, through a series of hands-on steps, use GitHub Copilot Chat to scaffold, build, refactor, test, and ship an interactive model that predicts Titanic passenger survival chances.
+Welcome to the Titanic Survival Predictor labs! In this hands-on series, you’ll use GitHub Copilot in Visual Studio Code in the context of data science. 
+
+Starting from scratch, you’ll work through labs covering data exploration, cleaning and modeling, and building an interactive prediction app. Along the way, you’ll learn to leverage Copilot Chat’s different modes (Ask, Edit, Agent) to speed up your workflow and follow best practices in data science
 
 ---
-
 
 ## Get to Know Copilot Chat — Modes at a Glance
 
@@ -34,7 +34,7 @@
 
 ---
 
-## Next Steps
+## Next Steps: The Labs
 
 - [Prerequisites](./Prerequisites.md)
 - [Lab 1: Project Setup and Intro to Copilot](./Lab%201%20Project%20Setup%20and%20Intro%20to%20Copilot.md)

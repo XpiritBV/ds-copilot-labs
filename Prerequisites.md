@@ -30,3 +30,7 @@ You are now ready to start your data science project in an isolated, reproducibl
 ## Version Control Best Practices (advice, but not necessary for the labs)
 
 We recommend using a Git repository to store your code for all labs and exercises. Commit your changes often with clear messages. This makes it easy to revert to previous versions if needed and encourages good development habits when working with AI tools like GitHub Copilot.
+
+---
+
+➡️ **[Next: Lab 1: Project Setup and Intro to Copilot](./Lab%201%20Project%20Setup%20and%20Intro%20to%20Copilot.md)**

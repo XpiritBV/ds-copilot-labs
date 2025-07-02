@@ -20,9 +20,12 @@ Let's create our project for data exploration using the Titanic dataset:
   https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
 ```
 
-> **Note:** Use the environment created in Prerequisites.
+> **Environment Setup:**
+> - **GitHub Codespaces**: Your Python environment is already configured and ready to use
+> - **Local Development**: Use the environment created in Prerequisites (e.g., `myenv`)
 
 ![Selecting the Python or Jupyter kernel in VS Code](images/choose-myenv.png)
+*Select the appropriate Python kernel for your environment*
 
 
 ### Reflection Questions

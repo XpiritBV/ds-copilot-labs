@@ -45,7 +45,29 @@ Starting from scratch, you’ll work through labs covering data exploration, cle
 
 ---
 
-## Next Steps: The Labs
+## Getting Started
+
+### Option 1: GitHub Codespaces (Recommended)
+
+The easiest way to get started is using GitHub Codespaces with the included devcontainer configuration:
+
+1. Click the **Code** button on the GitHub repository
+2. Select **Codespaces** tab
+3. Click **Create codespace on main**
+4. Wait for the environment to set up automatically
+
+The devcontainer includes:
+- Python 3.11 with all required data science packages
+- VS Code with Python, Jupyter, and GitHub Copilot extensions
+- Pre-configured environment ready for the labs
+
+### Option 2: Local Setup
+
+If you prefer to work locally, follow the instructions in [Prerequisites](./Prerequisites.md).
+
+---
+
+## Lab Sequence
 
 - [Prerequisites](./Prerequisites.md)
 - [Lab 1: Project Setup and Intro to Copilot](./Lab%201%20Project%20Setup%20and%20Intro%20to%20Copilot.md)

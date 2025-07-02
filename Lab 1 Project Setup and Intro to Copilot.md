@@ -14,8 +14,9 @@ Let's create our project for data exploration using the Titanic dataset:
 
 ```
 /new Create a new Python data science project to analyze Titanic survival data.  
-- Scaffold the project structure following Python data science best practices.
-- Add a Jupyter notebook to the project.
+- Create a new folder called `src` for the project
+- Scaffold the project structure inside the `src` folder following Python data science best practices
+- Add a Jupyter notebook to the project
 - In the notebook, include code to read the Titanic dataset from:  
   https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
 ```

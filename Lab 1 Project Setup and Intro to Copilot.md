@@ -14,15 +14,19 @@ Let's create our project for data exploration using the Titanic dataset:
 
 ```
 /new Create a new Python data science project to analyze Titanic survival data.  
-- Scaffold the project structure following Python data science best practices.
-- Add a Jupyter notebook to the project.
+- Create a new folder called `src` for the project
+- Scaffold the project structure inside the `src` folder following Python data science best practices
+- Add a Jupyter notebook to the project
 - In the notebook, include code to read the Titanic dataset from:  
   https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-machine-learning/main/Data/titanic.csv
 ```
 
-> **Note:** Use the environment created in Prerequisites.
+> **Environment Setup:**
+> - **GitHub Codespaces**: Your Python environment is already configured and ready to use
+> - **Local Development**: Use the environment created in Prerequisites (e.g., `myenv`)
 
 ![Selecting the Python or Jupyter kernel in VS Code](images/choose-myenv.png)
+*Select the appropriate Python kernel for your environment*
 
 
 ### Reflection Questions

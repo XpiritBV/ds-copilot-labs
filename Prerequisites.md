@@ -1,6 +1,8 @@
 ## Prerequisites
 
-The following installations are required to complete these labs:
+> **Note**: If you're using GitHub Codespaces, all prerequisites are automatically installed. These instructions are only for local development.
+
+The following installations are required to complete these labs locally:
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * The [Python extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) and [Jupyter extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) (both published by Microsoft)
@@ -10,15 +12,28 @@ The following installations are required to complete these labs:
 
 ---
 
-## Set up a Data Science Environment
+## Set up a Data Science Environment (Local Development Only)
+
+> **Note**: Skip this section if you're using GitHub Codespaces - your environment is already configured!
 
 Visual Studio Code and the Python extension provide a great editor for data science scenarios. With native support for Jupyter notebooks combined with Anaconda/Miniconda, it's easy to get started:
-
 
 To create a Conda environment, open an Anaconda Prompt or terminal and run:
 
 ```sh
-conda create -n myenv python=3.10 pandas jupyter seaborn scikit-learn
+conda create -n myenv python=3.12 pandas jupyter seaborn scikit-learn matplotlib streamlit pytest
+```
+
+Or alternatively, create a virtual environment and install from requirements.txt:
+
+```sh
+python -m venv myenv
+# On Windows:
+myenv\Scripts\activate
+# On macOS/Linux:
+source myenv/bin/activate
+
+pip install -r requirements.txt
 ```
 
 For more info, see the [Anaconda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).

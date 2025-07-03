@@ -13,7 +13,9 @@ This work is licensed under a
 
 Welcome to the Titanic Survival Predictor labs! In this hands-on series, you’ll use GitHub Copilot in Visual Studio Code in the context of data science. 
 
-Starting from scratch, you’ll work through labs covering data exploration, cleaning and modeling, and building an interactive prediction app. Along the way, you’ll learn to leverage Copilot Chat’s different modes (Ask, Edit, Agent) to speed up your workflow and follow best practices in data science
+Starting from scratch, you’ll work through labs covering data exploration, cleaning and modeling, and building an interactive prediction app. Along the way, you’ll learn to leverage Copilot Chat’s different modes (Ask, Edit, Agent) to speed up your workflow and follow best practices in data science. 
+
+> **Note**: There's no need to clone this repository. You'll be creating your own solution from scratch. Use this repository solely as a reference for the lab instructions and guidelines.
 
 ---
 

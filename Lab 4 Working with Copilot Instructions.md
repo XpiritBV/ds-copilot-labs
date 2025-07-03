@@ -9,7 +9,6 @@ In this lab, you will learn how to use GitHub Copilot Custom Instructions to sta
 Below is an example of a custom instructions file (`.github/copilot-instructions.md`) that applies to all Python (`.py`) and Jupyter Notebook (`.ipynb`) files in your project:
 
 ```markdown
----
 applyTo:
   - "**/*.ipynb"
   - "**/*.py"

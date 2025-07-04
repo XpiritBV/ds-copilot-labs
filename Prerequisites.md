@@ -13,18 +13,35 @@ The following installations are required to complete these labs locally:
 
 > **Note**: Skip this section if you're using GitHub Codespaces - your environment is already configured!
 
-Configuring a Python virtual environment, is a **strongly recommended** as a best practice for mostly Python projects.
+Setting up a Python virtual environment is **strongly recommended** as a best practice for Python projects to avoid dependency conflicts.
 
-Create a virtual environment and install from requirements.txt:
+### 1. Download Dependencies File
 
-```sh
-python -m venv myenv
-# On Windows:
-myenv\Scripts\activate
-# On macOS/Linux:
-source myenv/bin/activate
+Download the [`requirements.txt`](requirements.txt) file and save it to your project folder.
 
+### 2. Set Up Virtual Environment
+
+> **Important**: Ensure your terminal is open in the **same directory as `requirements.txt`** before running these commands.
+
+#### Windows:
+```cmd
+python -m venv dslab
+dslab\Scripts\activate
 pip install -r requirements.txt
+```
+
+#### macOS/Linux:
+```bash
+python -m venv dslab
+source dslab/bin/activate
+pip install -r requirements.txt
+```
+
+### 3. Verify Installation
+
+You can verify your environment is set up correctly by running:
+```cmd
+pip list
 ```
 
 You are now ready to start your data science project in an isolated, reproducible environment!

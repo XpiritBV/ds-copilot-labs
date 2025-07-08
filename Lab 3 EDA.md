@@ -24,10 +24,16 @@ What do the columns sibsp and parch mean in the Titanic data?
 Often, data contains missing values or incorrectly assigned data types. For example, if the `age` column has entries like `'?'`, pandas may set its type to `object` instead of a numeric type, which can interfere with calculations and visualizations.
 
 **Step 1:**  
-- Replace all `'?'` entries with `NaN` and ensure that numeric columns are properly typed.
+Replace all `'?'` entries with `NaN` and ensure that numeric columns are properly typed.
+
+### 🎯 Prompt (Edit Mode)
+
+```
+Replace all `'?'` entries with `NaN` and ensure that numeric columns are properly typed.
+```
 
 **Step 2:**  
-- Convert columns to numeric where possible. For instance, to prepare for correlation analysis, convert categorical variables to numbers (e.g., replace 'male' with 1 and 'female' with 0 in the `sex` column).
+Convert columns to numeric where possible. For instance, to prepare for correlation analysis, convert categorical variables to numbers (e.g., replace 'male' with 1 and 'female' with 0 in the `sex` column).
 
 
 ### 🎯 Prompt (Edit Mode)

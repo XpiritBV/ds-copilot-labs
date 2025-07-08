@@ -7,7 +7,7 @@ Let's build an interactive app that predicts survival outcomes for Titanic passe
 Create a Streamlit app (streamlit_app.py) that follow the requirements: 
 
 1. **Model Loading**
-   - Load a pre-trained logistic regression model (titanic_model.pkl) saved from a Jupyter notebook. Do not retrain the model in the app.
+   - Load your pre-trained model (titanic_model.pkl) saved from a Jupyter notebook. Do not retrain the model in the app.
    - The model must be trained using the features: `Pclass`, `Sex`, `Age`, `Fare`
 
 2. **Character Data Handling**

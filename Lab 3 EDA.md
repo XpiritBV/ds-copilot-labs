@@ -101,7 +101,7 @@ With your correlation analysis done, retain only those fields that add significa
 
 ## 6. Train and Evaluate a Model Using scikit-learn
 
-Using your finalized DataFrame, train and evaluate a machine learning model (e.g., logistic regression) using scikit-learn.
+Using your finalized DataFrame, train and evaluate a machine learning model (e.g., Random Forest Classifier) using scikit-learn.
 
 **Tips:**  
 - Use Ask Mode to draft a plan for implementation and explanation.

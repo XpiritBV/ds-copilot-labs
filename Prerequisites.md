@@ -23,6 +23,8 @@ Download the [`requirements.txt`](requirements.txt) file and save it to your pro
 
 > **Important**: Ensure your terminal is open in the **same directory as `requirements.txt`** before running these commands.
 
+> **Important**: Ensure you open the right type of terminal for your operating system (Windows > PowerShell, Linux > Bash, macOS > Bash).
+
 #### Windows:
 ```cmd
 python -m venv dslab

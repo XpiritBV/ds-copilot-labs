@@ -2,8 +2,13 @@
 
 ## Getting Started
 
+
+1. Create a new empty folder on your local machine or in GitHub Codespaces.  
+   - If you're using **GitHub Codespaces**, you can skip this step as the environment is already set up for you.
 1. **Open VS Code** and let's start from scratch.
-2. **Navigate to GitHub Copilot Chat** and enter `/help` to explore the available built-in helper commands. You'll experiment with them shortly!
+1. Open the folder you just created in VS Code.  
+   - If you're using **GitHub Codespaces**, this step is already done for you.
+1. **Navigate to GitHub Copilot Chat** and enter `/help` to explore the available built-in helper commands. You'll experiment with them shortly!
 
 ## Project Bootstrap and Data Reading
 
